@@ -40,20 +40,19 @@ exports.newboard = functions.https.onRequest(function(req, res) {
     board.set({
       boardId: req.query.name,
       date_created: new Date().toString(),
-      columns: messageTypes = [
-        {
-          id: 1,
-          value: 'Went well'
-        },
-        {
-          id: 2,
-          value: 'To improve'
-        },
-        {
-          id: 3,
-          value: 'Action items'
-        }
-      ],
+      columns: messageTypes = [{
+        id: 1,
+        value: 'Liked'
+      }, {
+        id: 2,
+        value: 'Learned'
+      }, {
+        id: 3,
+        value: 'Lacked'
+      }, {
+        id: 4,
+        value: 'Long For'
+      }],
       user_id: userId,
       max_votes: 6,
       text_editing_is_private : true

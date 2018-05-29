@@ -16,13 +16,16 @@ angular
 
     var messageTypes = [{
       id: 1,
-      value: 'Went well'
+      value: 'Liked'
     }, {
       id: 2,
-      value: 'To improve'
+      value: 'Learned'
     }, {
       id: 3,
-      value: 'Action items'
+      value: 'Lacked'
+    }, {
+      id: 4,
+      value: 'Long For'
     }];
 
     function getNextId(board) {
